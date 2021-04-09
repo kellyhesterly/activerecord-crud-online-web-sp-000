@@ -8,6 +8,10 @@
 def can_be_instantiated_and_then_saved
   movie = Movie.new
   movie.title = "This is a title."
+  movie.release_date = 1999
+  movie.director = "The Wachowski Sisters"
+  movie.lead = "Keanu Reeves"
+  movie.in_theaters = false
   movie.save
 end
 
