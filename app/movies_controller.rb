@@ -26,6 +26,7 @@ def can_be_created_with_a_hash_of_attributes
   }
   movie = {:title => attributes[0], :release_date => attributes[1], :director => attributes[2], :lead => attributes[3], :in_theaters => attributes[4]}
   movie.save
+  movie
 end
 
 def can_be_created_in_a_block(args = __)
