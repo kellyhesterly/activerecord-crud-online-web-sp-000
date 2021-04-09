@@ -24,7 +24,7 @@ def can_be_created_with_a_hash_of_attributes
       lead: "Paul Newman",
       in_theaters: false
   }
-  movie = {title, release_date, director, lead, in_theaters}
+  movie = {:title => attributes[0], :release_date => attributes[1], :director => attributes[2], :lead => attributes[3], :in_theaters => attributes[4]}
   movie.save
 end
 
