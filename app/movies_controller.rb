@@ -24,7 +24,8 @@ def can_be_created_with_a_hash_of_attributes
       lead: "Paul Newman",
       in_theaters: false
   }
-  movie = __
+  movie = {tiitle: title, release_date: release_date, director: director, lead: lead, in_theaters: in_theaters}
+  movie.save
 end
 
 def can_be_created_in_a_block(args = __)
